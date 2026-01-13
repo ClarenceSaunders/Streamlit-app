@@ -9,7 +9,7 @@ st.set_page_config(page_title="Iris Dataset Explorer", page_icon="🌸")
 page = st.sidebar.selectbox("Select a Page", ["Home", "Data Overview", "Exploratory Data Analysis", "Extras"])
 
 # Load dataset
-df = pd.read_csv('data/iris.csv')
+df = pd.read_csv('iris.csv')
 
 # Home Page
 if page == "Home":
@@ -133,4 +133,5 @@ if page == "Extras":
     st.write("This is outside the container")
 
     # Now insert some more in the container
+
     container.write("This is inside too")
